@@ -1,4 +1,3 @@
-/* eslint-disable no-alert */
 const yearOfBirth = +prompt('Enter your year of birth');
 const city = prompt('Enter your city of residence');
 const sport = prompt('What is your favourite sport');

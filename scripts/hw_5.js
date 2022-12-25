@@ -1,5 +1,3 @@
-/* eslint-disable no-restricted-globals */
-/* eslint-disable no-alert */
 const stringInput1 = prompt('Enter anything');
 const stringInput2 = prompt('Again enter anything');
 const stringInput3 = prompt('And again enter anything');

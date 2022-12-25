@@ -1,5 +1,3 @@
-/* eslint-disable no-console */
-/* eslint-disable no-plusplus */
 let task1 = '';
 for (let i = 10; i <= 20; i += 1) {
   task1 += `${i}, `;

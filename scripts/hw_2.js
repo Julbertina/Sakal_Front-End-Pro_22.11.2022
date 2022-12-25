@@ -1,4 +1,3 @@
-/* eslint-disable no-alert */
 const numberFirst = prompt('Enter your first number', 0);
 const numberSecond = prompt('Enter your second number', 0);
 const add = +numberFirst + +numberSecond;

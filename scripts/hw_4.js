@@ -1,4 +1,3 @@
-/* eslint-disable no-alert */
 const action = prompt('Enter operator ( either: add, sub, mult, div )');
 const firstNumber = prompt('Enter yours first number');
 const secondNumber = prompt('Enter yours second number');

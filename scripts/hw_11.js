@@ -1,5 +1,3 @@
-/* eslint-disable no-alert */
-/* eslint-disable no-console */
 const array = [];
 const size = prompt('Number of elemets in arrey will be:', 0);
 

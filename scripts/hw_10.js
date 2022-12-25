@@ -1,4 +1,3 @@
-/* eslint-disable no-console */
 let task1 = '';
 for (let i = 20; i <= 30; i += 0.5) {
   task1 += `${i} `;
