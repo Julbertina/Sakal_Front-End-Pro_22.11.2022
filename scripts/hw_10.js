@@ -32,11 +32,9 @@ outer:for (let i = 2; i <= n2; i++) {
 console.log(`4). ${task4.slice(0, -2)}`);
 
 const number = 81;
-// let task5 = '';
 let exponentiation = 0;
 if (number % 3 === 0) {
   for (let i = 3; i <= number; i *= 3) {
-    // task5 += `${i}, `;
     exponentiation += 1;
   }
   console.log(`5). 3 to the power ${exponentiation}`);

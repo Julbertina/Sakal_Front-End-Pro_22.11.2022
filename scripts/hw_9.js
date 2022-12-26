@@ -11,7 +11,7 @@ for (let i = 10; i <= 20; i += 1) {
 console.log(`2). ${task2.slice(0, -2)}`);
 
 let task3 = '';
-for (let i = 0; i <= 9; i += 1) {
+for (let i = 1; i <= 10; i += 1) {
   task3 += `${i} * 7 = ${i * 7}, `;
 }
 console.log(`3). ${task3.slice(0, -2)}`);
