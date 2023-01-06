@@ -61,3 +61,19 @@ function getArray(elements1, elements2) {
   return array;
 }
 console.log(getArray(sizeI, sizeJ));
+
+const text = prompt('enter a text in lower case', 'hello world');
+const del1 = prompt('enter 1st later to delete', 'h');
+const del2 = prompt('enter 2nd later to delete', 'w');
+
+console.log(text);
+
+function cutText(string, letter1, letter2) {
+  if (text !== null) {
+    const textAdj = string.toLowerCase().split(letter1.toLowerCase()).join('');
+    const textResult = textAdj.split(letter2.toLowerCase()).join('');
+    return textResult;
+  } return 'Function was stopped';
+}
+
+console.log(cutText(text, del1, del2));
