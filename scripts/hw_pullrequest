@@ -1,0 +1,16 @@
+const arr = [5, 66, 'pool', 7, 99, null, { name: 'Sam' }, [], true, 78];
+
+let sum = 0;
+let quantity = 0;
+
+function getAverage(myArr) {
+  for (let index = 0; index < myArr.length; index++) {
+    if (typeof myArr[index] === 'number') {
+      sum += myArr[index];
+      quantity++;
+    }
+  }
+  const average = sum / quantity;
+  return average;
+}
+console.log(getAverage(arr));
