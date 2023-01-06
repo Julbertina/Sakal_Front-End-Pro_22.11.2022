@@ -46,3 +46,18 @@ function doMath(x, znak, y) {
   return result;
 }
 console.log(doMath(number1, mathOperation, number2));
+
+const sizeI = prompt('Number of elements in main arrey will be:', 0);
+const sizeJ = prompt('Number of elements in inner arrey will be:', 0);
+const array = [];
+
+function getArray(elements1, elements2) {
+  for (let i = 0; i < elements1; i++) {
+    array[i] = [];
+    for (let j = 0; j < elements2; j++) {
+      array[i][j] = prompt(`Enter array element №${j + 1}`);
+    }
+  }
+  return array;
+}
+console.log(getArray(sizeI, sizeJ));
