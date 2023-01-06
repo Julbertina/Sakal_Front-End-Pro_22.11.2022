@@ -14,3 +14,35 @@ function getAverage(myArr) {
   return average;
 }
 console.log(getAverage(arr));
+
+const number1 = +prompt('Enter the first number');
+const number2 = +prompt('Enter the second number');
+const mathOperation = prompt('Enter the operation: +, -, *, /, %, ^');
+let result;
+
+function doMath(x, znak, y) {
+  switch (znak) {
+    case '+':
+      result = x + y;
+      break;
+    case '-':
+      result = x - y;
+      break;
+    case '*':
+      result = x * y;
+      break;
+    case '/':
+      result = x / y;
+      break;
+    case '%':
+      result = x % y;
+      break;
+    case '^':
+      result = x ** y;
+      break;
+    default:
+      result = 'operation can\'t be performed';
+  }
+  return result;
+}
+console.log(doMath(number1, mathOperation, number2));
