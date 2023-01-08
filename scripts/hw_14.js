@@ -1,11 +1,10 @@
-const arr = [5, 66, 'pool', 7, 99, null, { name: 'Sam' }, [], true, 78];
-
-let sum = 0;
-let quantity = 0;
+const arr = [5, 66, 'pool', 7, 99, null, { name: 'Sam' }, [], true, 78, NaN];
 
 function getAverage(myArr) {
+  let sum = 0;
+  let quantity = 0;
   for (let index = 0; index < myArr.length; index++) {
-    if (typeof myArr[index] === 'number') {
+    if (typeof myArr[index] === 'number' && Number(myArr[index])) {
       sum += myArr[index];
       quantity++;
     }
@@ -63,17 +62,16 @@ function getArray(elements1, elements2) {
 console.log(getArray(sizeI, sizeJ));
 
 const text = prompt('enter a text in lower case', 'hello world');
-const del1 = prompt('enter 1st later to delete', 'h');
-const del2 = prompt('enter 2nd later to delete', 'w');
+const array1 = [prompt('enter 1st letter to delete', 'h'), prompt('enter 2nd letter to delete', 'w')];
 
 console.log(text);
 
-function cutText(string, letter1, letter2) {
-  if (text !== null) {
-    const textAdj = string.toLowerCase().split(letter1.toLowerCase()).join('');
-    const textResult = textAdj.split(letter2.toLowerCase()).join('');
+function cutText(string, removeChars) {
+  if (string !== null) {
+    const textAdj = string.toLowerCase().split(removeChars[0].toLowerCase()).join('');
+    const textResult = textAdj.split(removeChars[1].toLowerCase()).join('');
     return textResult;
   } return 'Function was stopped';
 }
 
-console.log(cutText(text, del1, del2));
+console.log(cutText(text, array1));
