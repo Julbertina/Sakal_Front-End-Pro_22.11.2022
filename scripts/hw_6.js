@@ -1,3 +1,4 @@
+/* eslint-disable no-restricted-globals */
 const numberOne = Number(prompt('Enter 1st number'));
 const numberTwo = Number(prompt('Enter 2nd number'));
 const numberThree = Number(prompt('Enter 3rd number'));
